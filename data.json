@@ -1,0 +1,32 @@
+{
+    "siteName": "Matrimoniala de Sosete",
+    "url": "www.matrimonialadesoete.ro",
+    "catchline": "Nu iți lăsa șoseta să fie singură.",
+    "logo": {
+        "full": "assets/logo-full.png",
+        "800": "assets/logo-800.png",
+        "100": "assets/logo-100.png",
+        "64": "assets/logo-64.png",
+        "32": "assets/logo-32.png",
+        "16": "assets/logo-16.png"
+    },
+    "text": {
+        "cineSuntem": "Noi suntem Matrimoniala de Sosete, scopul nostru este sa dezvoltam un serviciu SAS (Sosete as a service).\n\nTu ai un set de sosete (identice) si noi iti trimitem lunar o soseta identica cu toate celalate pentru a inlocuii sosetele rupte/uzate/mancate de monstrul numit 'masina de 'spalat'.\n\nAvantajul este ca nu mai ai nevoie sa imperechezi sosete sau sa porti sosete care clar nu sunt asemanatoare nici chiar in mintea unei persoane bolnave de cataracta.\n\nCand gasesti o soseta rupta/uzata care accidental a fost folosita de cainele tau pe post naNamNam, poti sa o arunci fara sa ii cauti rudele indurerate pentru exterminare.\n\n<span id='promisiune'>Promisiunea noastra<span> este ca vom vinde intodeauna modelul si dimensiunea exacta de soseta pe care l-ai primit in starter pack. Vrem ca tu sa primesti exact modelul de soseta pe care l-ai comandat in pachetul initial, fie ca este in 3 luni, 3 ani sau 30 de ani."
+    },
+    "social": {
+        "facebook": "A",
+        "git": "A"
+    },
+    "contact": {
+        "tel" : "0749831488",
+        "email": "radu.dragan@matrimonialadesosete.ro",
+        "adresa": "STR. LĂMÂIȚEI NR. 105, BRAȘOV, JUD. BRAȘOV | COD POSTAL 500371 | ROMANIA",
+        "facebook": "https://www.facebook.com/matrimonialadesosete/"
+    },
+    "legal": {
+        "nume": "KINEDEX NETWORK SRL",
+        "j": "J08/325/2019",
+        "cui": "40499806",
+        "sediuSocial": "STR. LĂMÂIȚEI NR. 105, BRAȘOV, JUD. BRAȘOV | COD POSTAL 500371 | ROMANIA"
+    }
+}
