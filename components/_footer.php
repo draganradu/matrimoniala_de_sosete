@@ -19,7 +19,7 @@ function footer($siteData) {
                         " . 
                         buildfooterlinks([
                             ["<b>f</b>: @matrimonialadesoete", $siteData["contact"]["facebook"]],
-                            ["t: " . $siteData["contact"]["tel"],"model-unic-soeta-descriere/"],
+                            ["t: " . $siteData["contact"]["tel"], "tel:" . $siteData["contact"]["tel"]],
                             ["a: " . $siteData["contact"]["adresa"],"model-unic-soeta-descriere/"],
                         ])   
                         . "

@@ -4,9 +4,10 @@
     white-space: pre-wrap;
 }
 
+.standard-section-spacing,
 .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section.low-margin {
@@ -14,8 +15,13 @@
     padding-bottom: 20px!important;
 }
 
-.section:not(.container-fluid) + .section:not(.container-fluid) {
+.section:not(.container-fluid) + .section:not(.container-fluid):not(.standard-section-spacing) {
     padding-top: 0px;
+}
+
+.h2, h2 {
+    line-height: 1;
+    font-weight: 900;
 }
 
 .h3, h3 {
@@ -49,6 +55,16 @@ img.box {
 
 .break-all {
     word-break: break-all;
+}
+
+.form-check-group .form-check {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.form-check-group .form-check:last-child {
+    border-bottom: 0px solid transparent;
 }
 
 /* Landing section ---------------------- */
@@ -95,4 +111,83 @@ footer a:hover {
     color: inherit;
     opacity: 0.5;
     text-decoration: none;
+}
+
+footer h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* precomanda section ---------------------- */
+.subsection {
+    margin-bottom: 30px;
+}
+
+#precomandaIframe,
+#precomandaText {
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: rgba(0,0,0,.125);
+}
+
+#precomandaIframe {
+    flex: 0;
+    border-width: 1px 1px 1px 0px;
+}
+
+#precomandaIframe ul li a {
+    color: inherit;
+}
+
+#precomandaText {
+    padding-left: 100px;
+    /* background-color: #f9f9f9; */
+    background-color: rgba(0,0,0,.03);
+}
+
+#precomandaText p {
+    color:#6c757d!important;
+}
+
+.freebirdFormviewerViewFooterFooterBarLeft {
+    display: none!important;
+}
+
+/* calculator ---------------------- */
+#calculator-sosete-pierdute {
+    background-image: url('../assets/calculator_sosete_mancate.jpg');
+    background-color: #f3acb7;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+#calculator-sosete-pierdute .sidebar-calculator .card {
+    margin-bottom: 20px;
+    max-width: 220px;
+}
+
+#calculator-sosete-pierdute .sidebar-calculator .card h4 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#calculator-sosete-pierdute .sidebar-calculator .card p {
+    line-height: 1;
+}
+
+#calculator-sosete-pierdute .sidebar-calculator #initial-calc {
+    max-width: 350px;
+}
+
+#calculator-sosete-pierdute .calculator-form .card .card-body {
+    padding: 40px 40px 0 40px;
+}
+
+#calculator-sosete-pierdute .calculator-form .card .card-header {
+    padding: 20px 40px;
+}
+
+#calculator-sosete-pierdute .calculator-form .card .form-check-group,
+#calculator-sosete-pierdute .calculator-form .card .form-group {
+    padding-bottom: 10px;
 }

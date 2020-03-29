@@ -13,7 +13,7 @@
 
     // data
     include '../components/buy_btn.php';
-    $string = json_decode(file_get_contents("../data.json"), true);
+    $sData = json_decode(file_get_contents("../data.json"), true);
 
     function title($data){
         $data = strtoupper($data);
@@ -30,7 +30,7 @@
 </head>
 <body>
 
-<?= head($string['siteName']); ?>
+<?= head(); ?>
 
 <div class='container-fluid'>
     <div id='landing' class='section row'>
@@ -40,16 +40,16 @@
 <div class='container'>
     <div id='page-politica-retur' class='section row'>
         <div class='col-xl-8 col-lg-9 col-md-8 text-left'>   
-            <h1>Politica de confidențialitate și operare a "<?= $string['siteName'] ?>"</h1>
+            <h1>Politica de confidențialitate și operare a "<?= $sData['siteName'] ?>"</h1>
             <hr>
 <p>
 <?= title('Cine este operatorul') ?>
-<?= $string['siteName'] ?> este numele comercial al <?= $string['legal']['nume'] ?> cu sediul in <?= $string['legal']['sediuSocial'] ?> înregistrată la Registrul Comerțului sub nr. <?= $string['legal']['j'] ?>, CUI:  <?= $string['legal']['cui'] ?>.
+<?= $sData['siteName'] ?> este numele comercial al <?= $sData['legal']['nume'] ?> cu sediul in <?= $sData['legal']['sediuSocial'] ?> înregistrată la Registrul Comerțului sub nr. <?= $sData['legal']['j'] ?>, CUI:  <?= $sData['legal']['cui'] ?>.
 <br><br>
 
-Protecția datelor cu caracter personal este foarte importantă pentru "<?= $string['legal']['nume'] ?>", în conformitate cu Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din data de 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și libera circulație a acestor date (denumit în continuare "GDPR").
+Protecția datelor cu caracter personal este foarte importantă pentru "<?= $sData['legal']['nume'] ?>", în conformitate cu Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din data de 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și libera circulație a acestor date (denumit în continuare "GDPR").
 <br><br>
-Prelucrarea datelor cu caracter personal efectuată de "<?= $string['legal']['nume'] ?>" se va realiza întotdeauna în conformitate cu prevederile GDPR, precum și cu reglementările privind protecția datelor cu caracter personal. Prin Politica de confidențialitate, "<?= $string['legal']['nume'] ?>" dorește să informeze persoanele vizate cu privire la natura datelor cu caracter personal pe care le colectăm și le procesăm, precum și cu privire la scopurile prelucrării. În plus, persoanele vizate sunt informate prin intermediul Politicii de confidențialitate și cu privire la drepturile de care beneficiază.
+Prelucrarea datelor cu caracter personal efectuată de "<?= $sData['legal']['nume'] ?>" se va realiza întotdeauna în conformitate cu prevederile GDPR, precum și cu reglementările privind protecția datelor cu caracter personal. Prin Politica de confidențialitate, "<?= $sData['legal']['nume'] ?>" dorește să informeze persoanele vizate cu privire la natura datelor cu caracter personal pe care le colectăm și le procesăm, precum și cu privire la scopurile prelucrării. În plus, persoanele vizate sunt informate prin intermediul Politicii de confidențialitate și cu privire la drepturile de care beneficiază.
 <br><br>
 
 <?= title('CE SUNT CONSIDERATE DATELE CU CARACTER PERSONAL') ?>
@@ -59,7 +59,7 @@ Prelucrarea datelor cu caracter personal efectuată de "<?= $string['legal']['nu
 "Prelucrarea" înseamnă orice operațiune sau set de operațiuni efectuate asupra datelor cu caracter personal sau asupra seturilor de date cu caracter personal, cu sau fără utilizarea de mijloace automatizate, cum ar fi colectarea, înregistrarea, organizarea, structurarea, stocarea, adaptarea sau modificarea, extragerea, consultarea, utilizarea, divulgarea prin transmitere, diseminarea sau punerea la dispoziție în orice alt mod, alinierea sau combinarea, restricționarea, ștergerea sau distrugerea.
 <br><br>
 <?= title('PRINCIPII DE PRELUCRAREA DATELOR') ?>
-<?= $string['legal']['nume'] ?> se obligă să respecte principiile de protecție a datelor cu caracter personal (denumite în continuare "Principiile") prevăzute de GDPR, pentru a se asigura că toate datele sunt:
+<?= $sData['legal']['nume'] ?> se obligă să respecte principiile de protecție a datelor cu caracter personal (denumite în continuare "Principiile") prevăzute de GDPR, pentru a se asigura că toate datele sunt:
 <br><br>
 <?= title('Prelucrate în mod corect, legal și transparent') ?>
 Colectate în scopuri specificate, explicite și legitime.<br>
@@ -77,25 +77,25 @@ Procesate în conformitate cu drepturile persoanei vizate.<br>
 În scopul îndeplinirii obiectului nostru de activitate – Conform art. 6 alin. 1 lit. a) din GDPR, pot fi prelucrate date personale dacă persoana vizată și-a dat consimțământul pentru prelucrarea datelor sale cu caracter personal pentru unul sau mai multe scopuri specifice. Astfel, vă putem contacta sau putem transmite datele dumneavoastră cu caracter personal în scopul realizării obiectului nostru de activitate.
 <br><br>
 <?= title('NESWSLETTER') ?>
-Dacă ati optat pentru a primii emailuri recurente de informare (Newsletter), datele dumneavoastră cu caracter personal vor fi utilizate cu scopul exclusiv de a vă transmite informări cu conținut de marketing, despre produsele, serviciile și/sau promoțiile desfășurate de către <?= $string['legal']['nume'] ?> într-o anumita perioada.
+Dacă ati optat pentru a primii emailuri recurente de informare (Newsletter), datele dumneavoastră cu caracter personal vor fi utilizate cu scopul exclusiv de a vă transmite informări cu conținut de marketing, despre produsele, serviciile și/sau promoțiile desfășurate de către <?= $sData['legal']['nume'] ?> într-o anumita perioada.
 <br><br>
-Datele dumneavoastră cu caracter personal urmează a fi șterse de îndată, atunci când anulați abonamentul din secțiunea de Newsletter a <?= $string['legal']['nume'] ?>.
+Datele dumneavoastră cu caracter personal urmează a fi șterse de îndată, atunci când anulați abonamentul din secțiunea de Newsletter a <?= $sData['legal']['nume'] ?>.
 <br><br>
-Vă puteți dezabona în orice moment prin intermediul link-ului atașat la finalul Newsletter-ului primit sau printr-o solicitare scrisă adresată pe email la <?= $string['contact']['email'] ?>.
+Vă puteți dezabona în orice moment prin intermediul link-ului atașat la finalul Newsletter-ului primit sau printr-o solicitare scrisă adresată pe email la <?= $sData['contact']['email'] ?>.
 <br><br>
 <?= title('DIVULGAREA DATELOR CU CARACTER PERSONAL CĂTRE TERȚI') ?>
-Datele cu caracter personal prelucrate de către <?= $string['legal']['nume'] ?> vor putea fi divulgate și/sau transferate către terți doar în situația în care există consimțământul dumneavoastră expres pentru a proceda în acest sens, cu excepția situațiilor în care există o obligație legală/contractuală pentru <?= $string['legal']['nume'] ?> de a proceda în acest mod.
+Datele cu caracter personal prelucrate de către <?= $sData['legal']['nume'] ?> vor putea fi divulgate și/sau transferate către terți doar în situația în care există consimțământul dumneavoastră expres pentru a proceda în acest sens, cu excepția situațiilor în care există o obligație legală/contractuală pentru <?= $sData['legal']['nume'] ?> de a proceda în acest mod.
 <br><br>
-Vă rugăm să aveți în vedere faptul că este posibil ca, în anumite circumstanțe, să avem obligația de a divulga datele dumneavoastră cu caracter personal, partenerilor cu care <?= $string['legal']['nume'] ?> colaborează și/sau altor terți furnizori de servicii.
+Vă rugăm să aveți în vedere faptul că este posibil ca, în anumite circumstanțe, să avem obligația de a divulga datele dumneavoastră cu caracter personal, partenerilor cu care <?= $sData['legal']['nume'] ?> colaborează și/sau altor terți furnizori de servicii.
 <br><br>
 <?= title('PRELUCRAREA DATELOR DE CĂTRE TERȚI, ALTE SITE-URI') ?>
-Site-ul <?= $string['legal']['nume'] ?> poate conține, la un moment dat, link-uri de acces către alte site-uri ale căror politici de prelucrare a datelor pot fi diferite de cele ale <?= $string['legal']['nume'] ?>.
+Site-ul <?= $sData['legal']['nume'] ?> poate conține, la un moment dat, link-uri de acces către alte site-uri ale căror politici de prelucrare a datelor pot fi diferite de cele ale <?= $sData['legal']['nume'] ?>.
 <br><br>
-Vă rugăm să aveți în vedere și să consultați politicile privind protecția datelor cu caracter personal ale procesatorilor de plati. <?= $string['legal']['nume'] ?> nu își asuma responsabilitatea cu privire la informațiile trimise sau colectate de aceste terțe părți.
+Vă rugăm să aveți în vedere și să consultați politicile privind protecția datelor cu caracter personal ale procesatorilor de plati. <?= $sData['legal']['nume'] ?> nu își asuma responsabilitatea cu privire la informațiile trimise sau colectate de aceste terțe părți.
 <br><br>
 
 <?= title('PERIOADA STOCĂRII DATELOR') ?>
-<?= $string['legal']['nume'] ?> poate păstra datele prelucrate pentru diferite perioade de timp, apreciate ca fiind rezonabile, în conformitate cu scopurile indicate anterior. Păstrăm datele dumneavoastră numai pentru perioada necesară pentru atingerea scopului pentru care deținem datele, pentru a satisface nevoile dumneavoastră sau pentru a ne îndeplini obligațiile impuse de lege.
+<?= $sData['legal']['nume'] ?> poate păstra datele prelucrate pentru diferite perioade de timp, apreciate ca fiind rezonabile, în conformitate cu scopurile indicate anterior. Păstrăm datele dumneavoastră numai pentru perioada necesară pentru atingerea scopului pentru care deținem datele, pentru a satisface nevoile dumneavoastră sau pentru a ne îndeplini obligațiile impuse de lege.
 <br><br>
 Pentru a ști cât timp pot fi păstrate datele dumneavoastră, folosim următoarele criterii:
 <br><br>
@@ -106,7 +106,7 @@ Atunci când achiziționați produse și servicii, păstrăm datele dumneavoastr
 În cazul în care v-ați oferit consimțământul pentru marketing, păstrăm datele dumneavoastră personale până când vă dezabonați sau solicitați să le ștergem sau după o perioadă de inactivitate, fără o interacțiune activă definite în conformitate cu reglementările și îndrumările locale. În acest sens, menționăm că datele stocate în bazele noastre de date pentru scopul comunicărilor de marketing direct sunt șterse din evidențele acestor baze de date la 3 ani de ultima interacțiune cu dumneavoastră.<br>
 În cazul în care modulele cookie sunt stocate pe computer, le păstrăm atâta timp cât este necesar pentru ca acestea să își atingă scopurile (de exemplu, pe durata unei sesiuni pentru cookie-urile de coș de cumpărături sau cookie-urile pentru ID-uri de sesiune) și pentru o perioadă definită în conformitate cu reglementările și îndrumările locale. În acest sens, menționăm că datele prelucrate prin modulele cookies folosite pentru a furniza publicitate comportamentală online, pentru a ne personaliza serviciile pentru dumneavoastră și pentru a permite distribuirea conținutului nostru pe site-uri de socializare (butoane de distribuire destinate afișării site-ului), vor fi păstrate pentru o perioadă de maxim 3 ani de la colectarea acestora, în baza consimțământului dumneavoastră.<br><br>
 <?= title('DREPTURILE PERSOANELOR VIZATE') ?>
-În conformitate cu GDPR, aveți o serie de drepturi cu privire la datele personale pe care <?= $string['legal']['nume'] ?> le prelucrează:
+În conformitate cu GDPR, aveți o serie de drepturi cu privire la datele personale pe care <?= $sData['legal']['nume'] ?> le prelucrează:
 <br>
 Dreptul de acces la datele prelucrare – aveți dreptul de a accesa datele personale pe care le deținem. Prima furnizare de informații se va face fără a percepe niciun fel de taxa.<br> Daca veți mai avea nevoie de copii ale informațiilor deja furnizate, este posibil sa percepem o taxa rezonabila ținând cont de costurile administrative de furnizare a informațiilor.<br> Solicitările vădit neîntemeiate, excesive sau repetate pot sa nu primească un răspuns.<br>
 Dreptul la rectificarea datelor – aveți dreptul sa cereți ca Datele dumneavoastră sa fie rectificate daca sunt inexacte sau învechite și/sau sa le completați daca acestea sunt incomplete.<br><br>
@@ -123,8 +123,8 @@ Dreptul de a retrage consimțământul în orice moment – va puteți retrage c
 Dreptul de a depune o plângere la autoritatea de supraveghere competentă – aveți dreptul sa depuneți o plângere în fața autorității de protecție a datelor din țara dumneavoastră de reședință sau de domiciliu pentru a contesta practicile de protecție a datelor oferite de noi.<br>
 Dreptul de a vă opune prelucrării datelor dumneavoastră în scopuri de marketing direct – Va puteți dezabona sau renunța la comunicarea noastră de marketing direct în orice moment. Este mai ușor sa faceți acest lucru via linkul "dezabonare" în orice e-mail sau comunicare pe care vi le transmitem.<br>
 Dreptul de a vă opune prelucrării datelor dumneavoastră de către noi atunci când desfășurăm acțiuni în interes public sau în interesele legitime proprii sau ale unui terț – va puteți opune în orice moment prelucrării datelor dumneavoastră atunci când o astfel de prelucrare se bazează pe un interes legitim.<br>
-Dreptul de a dezactiva Cookies – aveți dreptul sa dezactivați modulele cookie. Setările din browser-ele de Internet sunt de obicei programate în mod implicit pentru a accepta modulele cookie, dar puteți sa le reglați ușor modificând setările browser ului. Multe module cookie sunt utilizate pentru a spori gradul de utilizare sau funcționalitate a site-urilor web / aplicațiilor, prin urmare, dezactivarea modulelor cookie va poate împiedica sa utilizați anumite părți ale site-urilor sau aplicațiilor noastre, așa cum este detaliat în tabelul Cookie relevant. Daca doriți sa restricționați sau sa blocați toate cookie-urile stabilite de site-urile web / aplicațiile noastre (care va pot împiedica sa utilizați anumite părți ale site-ului, <?= $string['url'] ?>) sau orice alte site-uri / aplicații, puteți face acest lucru prin setările browser-ului.<br>
-Vă puteți exercita oricare dintre aceste drepturi în ceea ce privește datele personale pe care <?= $string['legal']['nume'] ?> le prelucrează prin adresarea unei simple cereri către <?= $string['contact']['email'] ?>. Într-o astfel de situație este foarte posibil să solicităm o dovadă a identității dumneavoastră.<br><br>
+Dreptul de a dezactiva Cookies – aveți dreptul sa dezactivați modulele cookie. Setările din browser-ele de Internet sunt de obicei programate în mod implicit pentru a accepta modulele cookie, dar puteți sa le reglați ușor modificând setările browser ului. Multe module cookie sunt utilizate pentru a spori gradul de utilizare sau funcționalitate a site-urilor web / aplicațiilor, prin urmare, dezactivarea modulelor cookie va poate împiedica sa utilizați anumite părți ale site-urilor sau aplicațiilor noastre, așa cum este detaliat în tabelul Cookie relevant. Daca doriți sa restricționați sau sa blocați toate cookie-urile stabilite de site-urile web / aplicațiile noastre (care va pot împiedica sa utilizați anumite părți ale site-ului, <?= $sData['url'] ?>) sau orice alte site-uri / aplicații, puteți face acest lucru prin setările browser-ului.<br>
+Vă puteți exercita oricare dintre aceste drepturi în ceea ce privește datele personale pe care <?= $sData['legal']['nume'] ?> le prelucrează prin adresarea unei simple cereri către <?= $sData['contact']['email'] ?>. Într-o astfel de situație este foarte posibil să solicităm o dovadă a identității dumneavoastră.<br><br>
 <?= title('SOLICITĂRI JURIDICE') ?>
 Accesăm, păstrăm și oferim informațiile dumneavoastră autorităților de reglementare, factorilor de aplicare a legii sau altor entități:<br><br>
 
@@ -134,25 +134,25 @@ Atunci când considerăm, cu bună credință, că este necesar pentru: a detect
 Informațiile pe care le primim despre dumneavoastră pot fi accesate și stocate o perioadă mai lungă de timp atunci când fac obiectul unei solicitări de natură juridică sau unei obligații legale, al unei anchete guvernamentale, sau al unor investigații privind posibile încălcări ale condițiilor sau politicilor noastre, sau în alte cazuri pentru a preveni prejudiciile.<br><br>
 
 <?= title('RELAȚIILE CU ALȚI OPERATORI') ?>
-În funcție de context, s-ar putea să ne găsim în situația necesității absolute de a oferi informații la un nivel mai înalt, atât global, cât și intern sau extern, partenerilor noștri și celor cu care facem transfer de date cu respectarea GDPR, în virtutea asigurării oferirii unor servicii cât mai profesionale cu putință. Informațiile controlate de <?= $string['legal']['nume'] ?> ar putea fi transferate, transmise sau stocate și prelucrate în UE sau în alte țări decât țara în care locuiți, în scopurile descrise în această politică. Aceste transferuri de date sunt necesare pentru a putea furniza servicii la cel mai înalt nivel, precum și a continua să vă furnizăm materialele noastre la cel mai bun nivel profesional. Utilizăm clauze contractuale standard aprobate de Comisia Europeană și ne bazăm pe deciziile privind caracterul adecvat emise de Comisia Europeană cu privire la anumite țări, după caz, în ceea ce privește transferurile de date din SEE către Statele Unite și către alte țări.<br><br>
+În funcție de context, s-ar putea să ne găsim în situația necesității absolute de a oferi informații la un nivel mai înalt, atât global, cât și intern sau extern, partenerilor noștri și celor cu care facem transfer de date cu respectarea GDPR, în virtutea asigurării oferirii unor servicii cât mai profesionale cu putință. Informațiile controlate de <?= $sData['legal']['nume'] ?> ar putea fi transferate, transmise sau stocate și prelucrate în UE sau în alte țări decât țara în care locuiți, în scopurile descrise în această politică. Aceste transferuri de date sunt necesare pentru a putea furniza servicii la cel mai înalt nivel, precum și a continua să vă furnizăm materialele noastre la cel mai bun nivel profesional. Utilizăm clauze contractuale standard aprobate de Comisia Europeană și ne bazăm pe deciziile privind caracterul adecvat emise de Comisia Europeană cu privire la anumite țări, după caz, în ceea ce privește transferurile de date din SEE către Statele Unite și către alte țări.<br><br>
 
 <?= title('SECURITATEA PRELUCRĂRII') ?>
-<?= $string['legal']['nume'] ?> a adoptat măsuri tehnice și organizatorice de prelucrare a datelor, actualizate în conformitate cu cerințele GDPR, cu scopul de a proteja datele dumneavoastră cu caracter personal împotriva oricăror acțiuni de acces neautorizat, utilizare necorespunzătoare sau divulgare, modificare neautorizată, distrugere sau pierdere accidentală. Toți angajații și colaboratorii <?= $string['legal']['nume'] ?>, precum și orice terțe părți care acționează în numele și pe seama <?= $string['legal']['nume'] ?> sunt obligați să respecte confidențialitatea informațiilor dumneavoastră și cerințele GDPR, în conformitate cu prevederile Politicii de confidențialitate.<br><br>
+<?= $sData['legal']['nume'] ?> a adoptat măsuri tehnice și organizatorice de prelucrare a datelor, actualizate în conformitate cu cerințele GDPR, cu scopul de a proteja datele dumneavoastră cu caracter personal împotriva oricăror acțiuni de acces neautorizat, utilizare necorespunzătoare sau divulgare, modificare neautorizată, distrugere sau pierdere accidentală. Toți angajații și colaboratorii <?= $sData['legal']['nume'] ?>, precum și orice terțe părți care acționează în numele și pe seama <?= $sData['legal']['nume'] ?> sunt obligați să respecte confidențialitatea informațiilor dumneavoastră și cerințele GDPR, în conformitate cu prevederile Politicii de confidențialitate.<br><br>
 
 <?= title('EXONERARE DE RĂSPUNDERE') ?>
-Site-ul <?= $string['legal']['nume'] ?> poate conține legături către alte site-uri și/sau alte pagini web care nu sunt proprietatea <?= $string['legal']['nume'] ?> nu își asumă nicio responsabilitate cu privire la conținutul acestor site-uri și, prin urmare, nu va putea fi ținută răspunzătoare pentru conținutul, publicitatea, bunurile, serviciile, software-ul, informațiile sau alte materiale disponibile pe sau prin intermediul acestor site-uri. <?= $string['legal']['nume'] ?> nu va fi responsabilă de pierderea datelor cu caracter personal, de orice efecte negative asupra datelor personale ale vizitatorilor sau de alte daune morale și/ sau patrimoniale cauzate de accesul la respectivele site-uri.<br><br>
+Site-ul <?= $sData['legal']['nume'] ?> poate conține legături către alte site-uri și/sau alte pagini web care nu sunt proprietatea <?= $sData['legal']['nume'] ?> nu își asumă nicio responsabilitate cu privire la conținutul acestor site-uri și, prin urmare, nu va putea fi ținută răspunzătoare pentru conținutul, publicitatea, bunurile, serviciile, software-ul, informațiile sau alte materiale disponibile pe sau prin intermediul acestor site-uri. <?= $sData['legal']['nume'] ?> nu va fi responsabilă de pierderea datelor cu caracter personal, de orice efecte negative asupra datelor personale ale vizitatorilor sau de alte daune morale și/ sau patrimoniale cauzate de accesul la respectivele site-uri.<br><br>
 
 <?= title('ACTUALIZAREA POLITICII DE PROTECȚIE ȘI PRELUCRARE A DATELOR CU CARACTER PERSONAL') ?>
 Vă rugăm să aveți în vedere faptul că prezenta Politică poate face obiectul unor modificări periodice de conținut, prin actualizarea site-ului nostru.<br><br>
 
 Vă vom trimite o notificare înainte de a aduce orice modificări acestei Politici și vă vom oferi posibilitatea să consultați Politica de confidențialitate revizuita înainte de a alege să continuați să utilizați materialele noastre.<br><br>
 
-Vă rugăm să nu continuați să utilizați site-ul <?= $string['url'] ?> dacă nu sunteți de acord cu astfel de modificări. De asemenea, vă recomandăm să verificați această pagină pentru orice actualizare.<br><br>
+Vă rugăm să nu continuați să utilizați site-ul <?= $sData['url'] ?> dacă nu sunteți de acord cu astfel de modificări. De asemenea, vă recomandăm să verificați această pagină pentru orice actualizare.<br><br>
 
 <?= title('Termenii Politicii de confidențialitate se interpretează în conformitate cu legislația aplicabilă.') ?>
 <br><br>
 <?= title('VARSTA MINIMA PENTRU UTILIZARE') ?>
-Prin continuarea folosirii website-ului <?= $string['url'] ?> declar ca sunt major. In caz contrar voi înceta utilizarea site-ului si voi trimite o solicitare la adresa de e-mail <?= $string['contact']['email'] ?> în vederea ștergerii datelor mele.<br><br>    
+Prin continuarea folosirii website-ului <?= $sData['url'] ?> declar ca sunt major. In caz contrar voi înceta utilizarea site-ului si voi trimite o solicitare la adresa de e-mail <?= $sData['contact']['email'] ?> în vederea ștergerii datelor mele.<br><br>    
 </p>
 
         </div>
@@ -164,5 +164,5 @@ Prin continuarea folosirii website-ului <?= $string['url'] ?> declar ca sunt maj
 </div> 
 
 
-<?= footer($string); ?>
+<?= footer($sData); ?>
 </body>

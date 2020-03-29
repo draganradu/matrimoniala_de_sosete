@@ -1,12 +1,14 @@
 <?php 
-function sectionLanding($tagLine, $headLine, $logo) {
+function sectionLanding() {
+    global $sData;
+
     return "
         <div class='container-fluid'>
             <div id='landing' class='section row'>
                 <div class='col-md-12 text-center'>
-                <img src='${logo}' />
-                <h1>${tagLine}</h1>
-                <h2>${headLine}</h2>
+                <img src='" . $sData['logo']['100'] . "' />
+                <h1>" . $sData['siteName'] ."</h1>
+                <h2>" . $sData['catchline'] ."</h2>
                 </div>
             </div>
         </div>   

@@ -12,7 +12,7 @@
 
     // data
     include '../components/buy_btn.php';
-    $string = json_decode(file_get_contents("../data.json"), true);
+    $sData = json_decode(file_get_contents("../data.json"), true);
    
 ?>
 
@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<?= head($string['siteName']); ?>
+<?= head(); ?>
 
 <div class='container-fluid'>
     <div id='landing' class='section row'>
@@ -76,5 +76,5 @@
 </div> 
 
 
-<?= footer($string); ?>
+<?= footer($sData); ?>
 </body>

@@ -13,7 +13,7 @@
 
     // data
     include '../components/buy_btn.php';
-    $string = json_decode(file_get_contents("../data.json"), true);
+    $sData = json_decode(file_get_contents("../data.json"), true);
    
 ?>
 
@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<?= head($string['siteName']); ?>
+<?= head(); ?>
 
 <div class='container-fluid'>
     <div id='landing' class='section row'>
@@ -38,7 +38,7 @@
             <hr>
             <p>In majoritatea cazurilor in care se solicita returnarea produselor, aceasta se datoreaza asteptari diferite a cumparatorului fata de produsul livrat de catre noi.<br>
             Ne pare sincer rau de acest lucru, va rugam ca inainte de a incepe procedurile de returnare, sa aveti o convorbire cu unul din colegii nostri pentru a vedea daca aceasta este decizia corecta pentru situatia cu care va confruntati. 
-            Te rugam sa ne suni la <b><?= $string['contact']['tel'] ?></b>.
+            Te rugam sa ne suni la <b><?= $sData['contact']['tel'] ?></b>.
             <br>
             <br>
             Produsele achizitionate online se pot returna conform Ordonantei de Urgenta nr. 34 din 2014. Consumatorul (tu) are dreptul sa notifice in scris comerciantului ca renunta la cumparare, fara penalitati si fara invocarea unui motiv, in termen de 14 zile calendaristice de la intrarea in posesie fizica a produsului (data la care ati primit produsul de la curier/ data la care acesta a fost livrat de factorul postal).
@@ -84,5 +84,5 @@ In cazul in care a fost aprobata cererea de retur si clientul doreste restituire
 </div> 
 
 
-<?= footer($string); ?>
+<?= footer($sData); ?>
 </body>
