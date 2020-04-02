@@ -18,7 +18,7 @@
 ?>
 
 <head>
-
+<title><?= $sData['siteName'] . ' ' . $sData['delivery']['metaTitle'] ?></title>
 <?= cssHead() ?>
 
 </head>

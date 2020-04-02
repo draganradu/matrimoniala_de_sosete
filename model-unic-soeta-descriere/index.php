@@ -17,7 +17,7 @@
 ?>
 
 <head>
-
+<title><?= $sData['siteName'] . ' ' . $sData['sosetaStandard']['metaTitle'] ?></title>
 <?= cssHead() ?>
 
 </head>

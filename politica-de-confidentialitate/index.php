@@ -24,7 +24,7 @@
 ?>
 
 <head>
-
+<title><?= $sData['siteName'] . ' ' . $sData['confidentialitate']['metaTitle'] ?></title>
 <?= cssHead() ?>
 
 </head>

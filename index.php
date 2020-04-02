@@ -17,6 +17,7 @@
 ?>
 
 <head>
+    <title><?= $sData['siteName'] . ' ' . $sData['landing']['metaTitle'] ?></title>
     <?= cssHead() ?>
 </head>
 <body>
