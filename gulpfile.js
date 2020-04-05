@@ -1,8 +1,19 @@
-var gulp = require('gulp');
-var archiver = require('gulp-archiver');
- 
-gulp.task('default', function () {
-    return gulp.src('./**')
+const { src, dest, parallel, series } = require('gulp');
+const del = require('del');
+const archiver = require('gulp-archiver');
+
+
+function arhive() {
+    return src('./**')
         .pipe(archiver('archive.zip'))
-        .pipe(gulp.dest('./'));
-});
+        .pipe(dest('./'));
+}
+
+function deleteFile() {
+    return del(['archive.zip']);
+}
+
+exports.arhive = arhive;
+exports.deleteFile = deleteFile;
+
+exports.default = series( deleteFile, arhive);
