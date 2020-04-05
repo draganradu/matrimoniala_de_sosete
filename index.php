@@ -18,6 +18,7 @@
     $pageName = 'landing';
 ?>
 
+<html lang="<?= $sData['lang']; ?>">
 <head>
     <title><?= $sData['siteName'] . ' ' . $sData[$pageName]['metaTitle']; ?></title>
     <meta charset="UTF-8">
@@ -41,3 +42,4 @@
 
     <script src='scripts/calculator.js'></script>
 </body>
+</html>

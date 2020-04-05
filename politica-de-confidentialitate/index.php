@@ -23,7 +23,7 @@
     }
    
 ?>
-
+<html lang="<?= $sData['lang']; ?>">
 <head>
     <title><?= $sData['siteName'] . ' ' . $sData[$pageName]['metaTitle'] ?></title>
     <meta charset="UTF-8">
@@ -172,3 +172,4 @@ Prin continuarea folosirii website-ului <?= $sData['url'] ?> declar ca sunt majo
 
 <?= footer($sData); ?>
 </body>
+</html>

@@ -16,7 +16,7 @@
     $pageName = 'sosetaStandard';
    
 ?>
-
+<html lang="<?= $sData['lang']; ?>">
 <head>
     <title><?= $sData['siteName'] . ' ' . $sData[$pageName]['metaTitle'] ?></title>
     <meta charset="UTF-8">
@@ -85,3 +85,4 @@
 
 <?= footer($sData); ?>
 </body>
+</html>

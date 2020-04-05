@@ -18,6 +18,7 @@
    
 ?>
 
+<html lang="<?= $sData['lang']; ?>">
 <head>
     <title><?= $sData['siteName'] . ' ' . $sData[$pageName]['metaTitle'] ?></title>
     <meta charset="UTF-8">
@@ -75,3 +76,4 @@ Posibilitatea anularii unei comenzi sau livrari este disponibila in contul tau d
 
 <?= footer($sData); ?>
 </body>
+</html>

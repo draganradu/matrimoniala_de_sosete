@@ -18,6 +18,7 @@
    
 ?>
 
+<html lang="<?= $sData['lang']; ?>">
 <head>
     <title><?= $sData['siteName'] . ' ' . $sData[$pageName]['metaTitle'] ?></title>
     <meta charset="UTF-8">
@@ -92,3 +93,4 @@ In cazul in care a fost aprobata cererea de retur si clientul doreste restituire
 
 <?= footer($sData); ?>
 </body>
+</html>
