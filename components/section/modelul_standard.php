@@ -21,17 +21,17 @@ function modelulStandard() {
             </dl>
             </div>
             <div class='col-md-3'>
-                <img src='assets/soseta-unu.png' id='soseta-unu-img'>
+                <img src='assets/soseta-unu.png' id='soseta-unu-img' alt='soseta standard'>
             </div>
         </div> 
     </div>
     <div class='container-fluid section low-margin'>
         <div class='row justify-content-md-end'>
             <div class='col-md-1'>
-                <img src='assets/box.svg' class='box'>
+                <img src='assets/box.svg' class='box' alt='placeholder for future image'>
             </div>
             <div class='col-md-1'>
-                <img src='assets/box.svg' class='box'>
+                <img src='assets/box.svg' class='box' alt='placeholder for future image'>
             </div>    
         </div>   
     </div>

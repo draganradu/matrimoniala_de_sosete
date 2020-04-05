@@ -8,7 +8,7 @@ function sectionCineSuntem($founderText) {
                     <h2>Cine Suntem</h2>
                 </div>
                 <div class='col-md-4'>
-                    <img src='assets/box.svg' class='box'>
+                    <img src='assets/box.svg' class='box' alt='placeholder for future image'>
                 </div>
                 <div class='col-md-6'>
                     <p class='pre'>${founderText}</p>

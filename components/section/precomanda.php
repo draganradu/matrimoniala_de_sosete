@@ -68,7 +68,7 @@ function precomanda() {
                         </div>
 
                             <div class='col-md-3  offset-md-1'>
-                                <img src='assets/soseta-unu.png'>
+                                <img src='assets/soseta-unu.png' alt='soseta standard'>
                             </div>    
 
                     </div>
@@ -88,7 +88,7 @@ function precomanda() {
                         <p> ${material} </p>
                         </div>
                         <div class='col-md-2  offset-md-1'>
-                            <img src='assets/box.svg' class='box'>
+                            <img src='assets/box.svg' class='box' alt='placeholder for future image'>
                         </div>  
                     </div>
 
