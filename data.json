@@ -15,19 +15,29 @@
         "cineSuntem": "Noi suntem Matrimoniala de Sosete, scopul nostru este sa dezvoltam un serviciu SAS (Sosete as a service).\n\nTu ai un set de sosete (identice) si noi iti trimitem lunar o soseta identica cu toate celalate pentru a inlocuii sosetele rupte/uzate/mancate de monstrul numit 'masina de 'spalat'.\n\nAvantajul este ca nu mai ai nevoie sa imperechezi sosete sau sa porti sosete care clar nu sunt asemanatoare nici chiar in mintea unei persoane bolnave de cataracta.\n\nCand gasesti o soseta rupta/uzata care accidental a fost folosita de cainele tau pe post naNamNam, poti sa o arunci fara sa ii cauti rudele indurerate pentru exterminare.\n\n<span id='promisiune'>Promisiunea noastra<span> este ca vom vinde intodeauna modelul si dimensiunea exacta de soseta pe care l-ai primit in starter pack. Vrem ca tu sa primesti exact modelul de soseta pe care l-ai comandat in pachetul initial, fie ca este in 3 luni, 3 ani sau 30 de ani."
     },
     "landing": {
-        "metaTitle": "Model unic de sosete prin abonament"
+        "metaTitle": "Model unic de sosete prin abonament",
+        "description": "Singurul lucru mai rau decat punga cu pungi este punga cu sosete desperechiate. De asta producem un singur model de soseta pentru ca nimic nu ne displace mai tare decat sa cautam perechea sosetelor.",
+        "keywords": ["matrimoniala de sosete","sosete","o soseta" ,"abonament sosete","model standard soseta","model unic soseta","soseta de calitate"]
     },
     "delivery": {
-        "metaTitle": "Livreare"
+        "metaTitle": "Livreare",
+        "description": "Livrare produselor se face prin curier sau Posta Romana. In functie de marimea coletului, destinatarul poate opta pentru ori care din cele 2 moduri de livrare.",
+        "keywords": ["livrare sosete","sosete prin posta","sosete lunar"]
     },
     "sosetaStandard": {
-        "metaTitle": "Modelul unic de soseta"
+        "metaTitle": "Modelul unic de soseta",
+        "description": "Daca ai un singur model de soseta, toate sosetele tale sunt perechi.In aceast moment distribuim un singur model de soseta. Versiunea pentru barbati se numeste Adam iar versiunea pentru vemei se numeste Eva.",
+        "keywords": ["soseta standard","model unic sosete","sosete pe viata"]
     },
     "retur": {
-        "metaTitle": "Politic de retur"
+        "metaTitle": "Politic de retur",
+        "description": "In majoritatea cazurilor in care se solicita returnarea produselor, aceasta se datoreaza asteptari diferite a cumparatorului fata de produsul livrat de catre noi. Te rugam sa ne suni la 0749831488.",
+        "keywords": ["retur sosete","politica retur matrimonaiala de sosete"]
     },
     "confidentialitate": {
-        "metaTitle": "Politic de retur"
+        "metaTitle": "Politic de retur",
+        "description": "Protecția datelor cu caracter personal este foarte importantă pentru \"KINEDEX NETWORK SRL\", în conformitate cu Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din data de 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și libera circulație a acestor date (denumit în continuare \"GDPR\").",
+        "keywords": ["sosete gdpr","confidentialitate sosete","sosetele nu spun secrete"]
     },
     "cumfunctioneaza": {
         "title": "Cum Functionează",
@@ -47,6 +57,7 @@
         "git": "A"
     },
     "contact": {
+        "name": "Radu Dragan",
         "tel" : "0749831488",
         "email": "radu.dragan@matrimonialadesosete.ro",
         "adresa": "STR. LĂMÂIȚEI NR. 105, BRAȘOV, JUD. BRAȘOV | COD POSTAL 500371 | ROMANIA",
