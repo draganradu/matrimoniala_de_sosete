@@ -1,0 +1,73 @@
+@import '_variables.scss';
+
+/* general | framework ---------------------- */
+.pre {
+    white-space: pre-wrap;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* section | framework ---------------------- */
+.section {
+    .standard-section-spacing,
+    & {
+        padding-top: $sectorSpace;
+        padding-bottom: $sectorSpace;
+    }
+    
+    &.low-margin {
+        padding-top: $sectorSpaceSmall!important;
+        padding-bottom: $sectorSpaceSmall!important;
+    }
+    
+    &:not(.container-fluid) + &:not(.container-fluid):not(.standard-section-spacing) {
+        padding-top: 0px;
+    }
+
+    .spacer {
+        width: $sectorSpaceSmall;
+    }
+
+    .subsection {
+        margin-bottom: 30px;
+    }
+}
+
+/* general | img ---------------------- */
+img {
+    max-width: 100%;
+    &.box {
+        width: 100%;
+    }
+}
+
+/* general | dl ---------------------- */
+.dl-horizontal {
+    dt {
+        float: left;
+        width: 160px;
+        clear: left;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .dl-horizontal dd {
+        margin-left: 180px;
+    }
+}
+
+/* general | form-check-group ---------------------- */
+.form-check-group {
+    .form-check {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid lightgray;
+        &:last-child {
+            border-bottom: 0px solid transparent;
+        }
+    }
+}

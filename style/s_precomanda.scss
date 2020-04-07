@@ -1,0 +1,29 @@
+/* precomanda section ---------------------- */
+
+#precomandaIframe,
+#precomandaText {
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: rgba(0,0,0,.125);
+}
+
+#precomandaIframe {
+    flex: 0;
+    border-width: 1px 1px 1px 0px;
+    ul li a {
+        color: inherit;
+    }
+}
+
+#precomandaText {
+    padding-left: 100px;
+    background-color: rgba(0,0,0,.03);
+
+    p {
+        color:#6c757d!important;
+    }
+}
+
+.freebirdFormviewerViewFooterFooterBarLeft {
+    display: none!important;
+}

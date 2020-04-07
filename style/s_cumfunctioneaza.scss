@@ -1,0 +1,9 @@
+/* Cum functioneaza section ---------------------- */
+#cumfunctioneaza-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    & .card .card-title {
+        margin-bottom: 0
+    }
+}
