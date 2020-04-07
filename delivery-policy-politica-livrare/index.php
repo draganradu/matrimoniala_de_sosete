@@ -26,7 +26,7 @@
     <meta name="description" content="<?= $sData[$pageName]['description']; ?>">
     <meta name="keywords" content="<?= implode(",", $sData[$pageName]['keywords']); ?>">
     <meta name="author" content="<?= $sData['contact']['name'] ;?>">
-    
+    <?= canonicalUrl(basename(__DIR__)) ?>
     <?= cssHead() ?>
 </head>
 <body>
