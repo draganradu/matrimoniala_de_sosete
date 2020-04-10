@@ -1,5 +1,5 @@
 # Matrimoniala de Sosete
-Daca esti interesat de produse http://matrimonialadesosete.ro/ daca esti interesat de partea de optimizare web a unui site contina sa citesti.
+Daca esti interesat de produse https://matrimonialadesosete.ro/ daca esti interesat de partea de optimizare web a unui site contina sa citesti.
 
 ## Studiu Seo
 De foarte mult timp vreau sa fac un studiu seo, sa vad cum functioneaza in mod real unelte pe care toata lumea (cei pe care ii stiu) le foloseste pentru a face un site sa performeze in motoarele de cautare si sa fie digerat usor de utilizatori. Si daca trebuie sa le mai folosesc sau nu.
