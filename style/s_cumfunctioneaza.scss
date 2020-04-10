@@ -1,7 +1,9 @@
+@import '_variables.scss';
+
 /* Cum functioneaza section ---------------------- */
 #cumfunctioneaza-body {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: $sectorSpaceSmall;
+    margin-bottom: $sectorSpaceSmall;
 
     & .card .card-title {
         margin-bottom: 0

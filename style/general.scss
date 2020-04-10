@@ -23,7 +23,7 @@
     }
     
     &:not(.container-fluid) + &:not(.container-fluid):not(.standard-section-spacing) {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .spacer {
@@ -31,7 +31,7 @@
     }
 
     .subsection {
-        margin-bottom: 30px;
+        margin-bottom: $sectorSpaceMedium;
     }
 }
 

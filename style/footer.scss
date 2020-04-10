@@ -1,13 +1,15 @@
+@import '_variables.scss';
+
 /* footer section ---------------------- */
 footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: $sectorSpaceMedium;
+    padding-bottom: $sectorSpaceMedium;
 
     a {
         color: inherit;
         &:hover {
             color: inherit;
-            opacity: 0.5;
+            opacity: .5;
             text-decoration: none;
         }
     }
