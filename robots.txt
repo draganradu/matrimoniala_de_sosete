@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://matrimonialadesosete.ro/sitemap.xml
+Sitemap: https://matrimonialadesosete.ro/sitemap.xml

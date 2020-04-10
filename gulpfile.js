@@ -10,12 +10,12 @@ const cleanCSS = require('gulp-clean-css');
 
 function arhive() {
     return src('./**')
-        .pipe(archiver('archive.zip'))
+        .pipe(archiver('_uploade_archive.zip'))
         .pipe(dest('./'));
 }
 
 function deleteFile() {
-    return del(['archive.zip']);
+    return del(['_uploade_archive.zip']);
 }
 
 function style() {
