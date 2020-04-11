@@ -28,6 +28,7 @@
     <meta name="author" content="<?= $sData['contact']['name'] ;?>">
     <?= canonicalUrl(basename(__DIR__)) ?>
     <?= cssHead() ?>
+    <?= googleAnalitycs() ?>
 </head>
 <body>
 

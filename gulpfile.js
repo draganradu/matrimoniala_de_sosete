@@ -9,7 +9,7 @@ sass.compiler = require('node-sass');
 const cleanCSS = require('gulp-clean-css');
 
 function arhive() {
-    return src('./**')
+    return src(['./**','./_**/*','!./style/*.scss',])
         .pipe(archiver('_uploade_archive.zip'))
         .pipe(dest('./'));
 }
