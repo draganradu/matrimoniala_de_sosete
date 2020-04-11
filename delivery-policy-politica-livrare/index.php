@@ -18,6 +18,7 @@
    
 ?>
 
+<!DOCTYPE html>
 <html lang="<?= $sData['lang']; ?>">
 <head>
     <title><?= $sData['siteName'] . ' ' . $sData[$pageName]['metaTitle'] ?></title>
