@@ -20,6 +20,18 @@
         "description": "Singurul lucru mai rau decat punga cu pungi este punga cu sosete desperechiate. De asta producem un singur model de soseta pentru ca nimic nu ne displace mai tare decat sa cautam perechea sosetelor.",
         "keywords": ["matrimoniala de sosete","sosete","o soseta" ,"abonament sosete","model standard soseta","model unic soseta","soseta de calitate"]
     },
+    "404": {
+        "metaTitle": "404",
+        "description": "Informatia cauta nu este aici, probabil este in acelasi loc in care sunt sosetele pierdute la spalat.",
+        "text": "Informatia cauta nu este aici, probabil este in acelasi loc in care sunt sosetele pierdute la spalat.",
+        "keywords": ["404"]
+    },
+    "500": {
+        "metaTitle": "500",
+        "description": "Soseta noastra are o gaura in interior, incercam ca o reparam daca este foarte urgent te rugam sa ne suni.",
+        "text": "Avem o problema, precum o gaura prin care iti iese un cremvustel.",
+        "keywords": ["500"]
+    },
     "delivery": {
         "metaTitle": "Livreare",
         "description": "Livrare produselor se face prin curier sau Posta Romana. In functie de marimea coletului, destinatarul poate opta pentru ori care din cele 2 moduri de livrare.",
